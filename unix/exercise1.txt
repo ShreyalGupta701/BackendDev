@@ -1,0 +1,42 @@
+C:\Users\shrey>bash
+root@ShreyalsProbook:/mnt/c/Users/shrey# mkdir git_exercise1
+root@ShreyalsProbook:/mnt/c/Users/shrey# cd git_exercise1
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint:
+hint:   git config --global init.defaultBranch <name>
+hint:
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint:
+hint:   git branch -m <name>
+Initialized empty Git repository in /mnt/c/Users/shrey/git_exrorororrrrrrrrrroot@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# touch README.md
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# echo "This is my first Git exercise" > README.md
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git add README.md
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git commit -m "Initial commit: added README file"
+[master (root-commit) 68851f9] Initial commit: added README file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# echo "Learning basic Git workflow" >> README.md
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git add README.md
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git commit -m "Updated README with new line"
+[master c6b72da] Updated README with new line
+ 1 file changed, 1 insertion(+)
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git log
+commit c6b72da1b2266b8059c773e20a6270a20fd0ed13 (HEAD -> master)
+Author: Your Name <your.email@example.com>
+Date:   Fri Jan 16 05:59:01 2026 +0000
+
+    Updated README with new line
+
+commit 68851f9ddbfe279577cc4699734cea5a6aba192a
+Author: Your Name <your.email@example.com>
+Date:   Fri Jan 16 05:58:40 2026 +0000
+
+    Initial commit: added README file
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git log --oneline
+c6b72da (HEAD -> master) Updated README with new line
+68851f9 Initial commit: added README file
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1#
