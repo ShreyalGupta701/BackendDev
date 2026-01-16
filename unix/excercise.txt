@@ -1,0 +1,26 @@
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git branch feature
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git checkout feature
+Switched to branch 'feature'
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git checkout -b feature
+fatal: a branch named 'feature' already exists
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# touch feature.txt
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git commit -m "Added feature.txt in feature branch"
+On branch feature
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        feature.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git merge feature
+Already up to date.
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git branch -d feature
+error: cannot delete branch 'feature' used by worktree at '/mnt/c/Users/shrey/git_exercise1'
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git branch
+* feature
+  master
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1# git log --oneline
+c6b72da (HEAD -> feature, master) Updated README with new line
+68851f9 Initial commit: added README file
+root@ShreyalsProbook:/mnt/c/Users/shrey/git_exercise1#
