@@ -1,0 +1,58 @@
+shreyal gupta@shreyal:/mnt/c/Users/91766$ mkdir -p classwork26/{name,company}
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ ls classwork26
+company  name
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ ls classwork26/name
+ls classwork26/company
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ touch classwork26/name/file.txt classwork26/company/file.txt
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ ls classwork26/name
+ls classwork26/company
+file.txt
+file.txt
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ echo -e "Rahul\nAman\nSneha\nPriya\nKaran" > classwork26/name/file.txt
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ echo -e "Google\nMicrosoft\nInfosys\nTCS\nAmazon" > classwork26/company/file.txt
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ cat classwork26/name/file.txt
+cat classwork26/company/file.txt
+Rahul
+Aman
+Sneha
+Priya
+Karan
+Google
+Microsoft
+Infosys
+TCS
+Amazon
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ echo -e "Rohit\nNeha" >> classwork26/name/file.txt
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ sed -i '$d' classwork26/name/file.txt
+sed -i '$d' classwork26/name/file.txt
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ cat classwork26/name/file.txt
+Rahul
+Aman
+Sneha
+Priya
+Karan
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ echo -e "Capgemini\nOracle" >> classwork26/company/file.txt
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ tail -2 classwork26/company/file.txt
+Capgemini
+Oracle
+
+shreyal gupta@shreyal:/mnt/c/Users/91766$ cat classwork26/company/file.txt
+Google
+Microsoft
+Infosys
+TCS
+Amazon
+Capgemini
+Oracle
